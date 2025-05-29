@@ -1,0 +1,233 @@
+body {
+
+    margin: 0;
+
+    font-family: 'Arial', sans-serif;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+
+    background: linear-gradient(135deg, #2a4365, #4a69bd); /* Gradiente de azul escuro para azul claro */
+
+    color: #e0e0e0;
+
+}
+
+.container {
+
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente para o container */
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Sombra mais acentuada */
+
+    text-align: center;
+
+    width: 90%;
+
+    max-width: 400px; /* Levemente menor para focar na conversão única */
+
+    backdrop-filter: blur(10px); /* Efeito de vidro fosco */
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+h1 {
+
+    color: #ffffff;
+
+    margin-bottom: 35px;
+
+    font-size: 2.2em; /* Tamanho ligeiramente menor para o título específico */
+
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+
+}
+
+.input-group {
+
+    margin-bottom: 25px;
+
+    text-align: left;
+
+}
+
+label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 1.1em;
+
+    color: #c0c0c0;
+
+}
+
+input[type="number"] {
+
+    width: calc(100% - 20px);
+
+    padding: 12px 10px;
+
+    border: 1px solid #708090;
+
+    border-radius: 6px;
+
+    background-color: rgba(255, 255, 255, 0.08);
+
+    color: #ffffff;
+
+    font-size: 1em;
+
+    outline: none;
+
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+
+}
+
+input[type="number"]::placeholder {
+
+    color: #a0a0a0;
+
+}
+
+input[type="number"]:focus {
+
+    border-color: #87ceeb; /* Azul claro ao focar */
+
+    background-color: rgba(255, 255, 255, 0.15);
+
+}
+
+button {
+
+    background-color: #4CAF50; /* Verde vibrante para o botão */
+
+    color: white;
+
+    padding: 15px 30px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 1.2em;
+
+    font-weight: bold;
+
+    margin-top: 20px;
+
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+
+}
+
+button:hover {
+
+    background-color: #45a049;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.6);
+
+}
+
+.resultado {
+
+    background-color: rgba(255, 255, 255, 0.08);
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    margin-top: 30px;
+
+    text-align: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    font-size: 1.4em;
+
+    font-weight: bold;
+
+    color: #87ceeb; /* Azul claro para o resultado */
+
+    min-height: 30px; /* Garante que o div não colapse */
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.loading {
+
+    margin-top: 20px;
+
+    font-style: italic;
+
+    color: #c0c0c0;
+
+}
+
+.last-updated {
+
+    font-size: 0.85em;
+
+    color: #a0a0a0;
+
+    margin-top: 15px;
+
+}
+
+/* Responsividade Básica */
+
+@media (max-width: 600px) {
+
+    .container {
+
+        padding: 25px;
+
+        margin: 20px;
+
+    }
+
+    h1 {
+
+        font-size: 1.8em;
+
+        margin-bottom: 25px;
+
+    }
+
+    button {
+
+        width: 100%;
+
+        font-size: 1.1em;
+
+    }
+
+    .resultado {
+
+        font-size: 1.2em;
+
+        padding: 20px;
+
+    }
+
+}
